@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      Здесь <img />может
+      <form>быть</form>
+      любой <a>текст </a>с<span> тегами!</span>
+    </div>
+
+    <script>
+      const strWithTags = "<p>Любой текст с HTML-тегами</p>";
+      const strWithoutTags = strWithTags.replace(/(<([^>]+)>)/gi, "");
+      console.log(strWithoutTags);
+    </script>
+  </body>
+</html>
